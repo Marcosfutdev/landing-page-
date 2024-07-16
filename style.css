@@ -1,0 +1,228 @@
+body, *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   --cor-fundo:rgb(0, 0, 0);
+   --cor-text:white;
+   --background-link_compre:rgb(0, 64, 255);
+   --color-link_compre:rgb(0, 0, 0);
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+header {
+    background-image: url('./assets/img/background.svg');
+    background-repeat: no-repeat;
+    height:850px;
+    padding-top: 10px;
+    background-color: #000;
+}
+
+header > .inic_header {
+    margin-top: 15px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > .inic_header > .links {
+    margin-right: 50px;
+}
+header > .inic_header > .links > ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+header > .inic_header > .links > ul > li > a {
+    text-decoration: none;
+    color: var(--cor-text);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+header > .inic_header > .links > ul > li > .link_compre, 
+header > .content_header > .texts > #content_links > .link_compre{
+    color: var(--color-link_compre);
+    background-color: var(--background-link_compre);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header > .inic_header > .links > ul > li > .link_compre:hover,
+header > .content_header > .texts > #content_links > .link_compre:hover
+{
+    background-color: transparent;
+    color: var(--cor-text);
+    border-color: white;
+}
+
+header > .content_header {
+    margin-left: 100px;
+    margin-top: 80px;
+    width: 800px;
+}
+header > .content_header > .texts > h1 {
+    color: var(--cor-text);
+    font-size: 50px;
+    font-weight: bold;
+}
+header > .content_header > .texts > p {
+    color: var(--cor-text);
+    width: 680px;
+    height: 20px;
+    margin-top: 10px;
+}
+header > .content_header > .texts > #content_links {
+    margin-top: 30px;
+    display: flex;
+     gap: 10px;
+    align-items: center;
+}
+header > .content_header > .texts > #content_links > .link_saiba {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: var(--cor-text);
+    text-decoration: none;
+}
+header > .content_header > .texts > #content_links > .link_saiba:hover {
+   color: var(--background-link_compre);
+}
+header > .content_header > .div_video > video {
+    height: 250px;
+    margin-top: 40px;
+}
+
+section > .big_pers {
+        height: 600px;
+        width: 100vw;
+        text-align: center;
+        background-color: var(--cor-fundo);
+}
+section > .big_pers > h1 {
+    color: var(--cor-text);
+    font-size: 35px;
+   padding: 25px;
+}
+section > .big_pers > .herois {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section > .big_pers > .herois > .heroi > img {
+    height: 400px;
+    background-color: #333;
+    border: 1px solid white;
+}
+section > .big_pers > .herois > .heroi:hover > img {
+    border-color: blue;
+    transition: 0.1;
+}
+
+section > .strife {
+    background-image: url('./assets//img/background-2.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: var(--cor-fundo);
+    color: var(--cor-text);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section > .strife >  .imgs_strife {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+section > .strife > .imgs_strife > img {
+    height: 200px;
+    border: 1px solid white;
+}
+section > .strife >  #content_strife {
+    margin-right: 5px;
+}
+section > .strife >  #content_strife > h1 {
+    font-size: 40px;
+    width: 400px;
+}
+section > .strife >  #content_strife > p {
+   width: 300px;
+   font-size: 20px;
+   margin-top: 5px;
+}
+footer {
+    background-color: var(--cor-fundo);
+    color: var(--cor-text);
+    height: 900px;
+}
+footer > h1 {
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+footer > .weapons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+footer > .weapons > .weapon {
+    background-color: #333;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    border: 1px solid white;
+}
+footer > .weapons > .weapon > .weapon_content {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer > .weapons > .weapon > .weapon_content > h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+footer > .weapons > .weapon > img {
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+footer > .weapons > .weapon > .weapon_content > a {
+    background-color: var(--background-link_compre);
+    color: var(--color-link_compre);
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+footer > .weapons > .weapon > .weapon_content > a:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+@media only screen and (max-width:375px){
+    /*Se quiser deixar ela responsiva*/
+}
